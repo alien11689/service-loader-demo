@@ -1,4 +1,4 @@
-package com.github.alien11689.serviceloaderdemo.extensions.custom;
+package com.github.alien11689.serviceloaderdemo.coreservice.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -7,6 +7,6 @@ import java.lang.annotation.Target;
 
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.TYPE)
-public @interface CustomTypeName {
-    String nameOfTheType();
+public @interface TypeAlias {
+    String value();
 }

@@ -1,4 +1,4 @@
-package com.github.alien11689.serviceloaderdemo.extensions.uppercased;
+package com.github.alien11689.serviceloaderdemo.extensions.custom;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -7,5 +7,6 @@ import java.lang.annotation.Target;
 
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.TYPE)
-public @interface TypeNameAsUpperCasedClassSimpleName {
+public @interface CustomTypeAlias {
+    String nameOfTheType();
 }

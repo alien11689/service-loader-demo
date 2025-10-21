@@ -5,14 +5,14 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.ServiceLoader;
 
-import com.github.alien11689.serviceloaderdemo.coreservice.spi.TypeNameHandler;
+import com.github.alien11689.serviceloaderdemo.coreservice.spi.TypeAliasHandler;
 
-public class TypeNameProvider {
+public class TypeAliasProvider {
 
-    private static Map<Class<? extends Annotation>, TypeNameHandler> annotationToTypeNameHandler = new HashMap<>();
+    private static Map<Class<? extends Annotation>, TypeAliasHandler> annotationToTypeNameHandler = new HashMap<>();
 
     static {
-        var loader = ServiceLoader.load(TypeNameHandler.class);
+        var loader = ServiceLoader.load(TypeAliasHandler.class);
         loader.forEach(typeNameHandler -> annotationToTypeNameHandler.put(typeNameHandler.getSupportedAnnotation(), typeNameHandler));
     }
 

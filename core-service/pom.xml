@@ -10,17 +10,4 @@
     </parent>
 
     <artifactId>core-service</artifactId>
-
-    <properties>
-        <javers-core.version>7.9.0</javers-core.version>
-    </properties>
-
-    <dependencies>
-        <dependency>
-            <groupId>org.javers</groupId>
-            <artifactId>javers-core</artifactId>
-            <version>${javers-core.version}</version>
-        </dependency>
-    </dependencies>
-
 </project>

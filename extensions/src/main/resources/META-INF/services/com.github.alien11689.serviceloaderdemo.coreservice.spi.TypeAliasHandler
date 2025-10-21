@@ -1,0 +1,2 @@
+com.github.alien11689.serviceloaderdemo.extensions.custom.CustomTypeAliasHandler
+com.github.alien11689.serviceloaderdemo.extensions.uppercased.UpperCasedClassSimpleNameTypeAliasHandler
